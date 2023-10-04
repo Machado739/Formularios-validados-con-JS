@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Validación</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        /* Estilos para el formulario */
+        .formulario-seccion {
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para los errores */
+        .error {
+            color: red;
+            display: none;
+        }
+
+        /* Estilos para el mensaje emergente */
+        .mensaje-emergente {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 9999;
+            display: none;
+            animation: fadeOut 3s ease-in-out forwards;
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Validación</h1>
+        <form id="formulario">
+            <div class="formulario-seccion">
+                <label for="id">ID </label>
+                <input type="text" class="form-control" id="id" name="id" placeholder="5 Numeros exactos">
+                <div class="error" id="errorId"></div>
+            </div>
+            
+            <div class="formulario-seccion">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
+                <div class="error" id="errorNombre"></div>
+            </div>
+            
+            <div class="formulario-seccion">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos">
+                <div class="error" id="errorApellidos"></div>
+            </div>
+            
+            <div class="formulario-seccion">
+                <label for="telefono">Teléfono</label>
+                <input type="text" class="form-control" id="telefono" name="telefono" placeholder="(###)###-####">
+                <div class="error" id="errorTelefono"></div>
+            </div>
+            
+            <div class="formulario-seccion">
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="correo@example.com">
+                <div class="error" id="errorCorreo"></div>
+            </div>
+            
+            <div class="formulario-seccion">
+                <label for="edad">Edad </label>
+                <input type="text" class="form-control" id="edad" name="edad" placeholder="Número positivo">
+                <div class="error" id="errorEdad"></div>
+            </div>
+            
+            <div class="formulario-seccion">
+                <label for="fechaNacimiento">Fecha de Nacimiento </label>
+                <input type="text" class="form-control" id="fechaNacimiento" name="fechaNacimiento" placeholder="AAAA-MM-DD">
+                <div class="error" id="errorFechaNacimiento"></div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <div id="mensajeError" class="text-danger mt-3"></div>
+    </div>
+
+    <!-- Agregar Bootstrap JS y tu archivo de JavaScript personalizado -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

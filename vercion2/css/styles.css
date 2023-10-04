@@ -1,0 +1,53 @@
+/* styles.css */
+
+
+/* Estilo para el contenedor principal */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px; /* Agregar un espacio interno */
+    border-radius: 10px; /* Redondear los bordes del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agregar una sombra */
+    background-color: #fff; /* Establecer un fondo blanco */
+}
+
+/* Estilo para el encabezado */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para los elementos de formulario */
+label {
+    font-weight: bold;
+    
+}
+  
+
+/* Estilo para el formulario */
+#formulario {
+    max-width: 400px;
+    margin: 0 auto;
+     
+}
+div{
+    margin-bottom: 20px;
+}
+/* Estilo para el botón de enviar */
+.btn-primary {
+    margin-top: 20px;
+}
+
+/* Estilo para el mensaje de error */
+#mensajeError {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+/* Modificación en el CSS */
+/* Estilo para los elementos <span> dentro de las etiquetas <label> */
+label span {
+    font-weight: normal; /* Revertir el estilo en negrita */
+    margin-left: 5px; /* Añadir un espacio a la izquierda del texto */
+}
+
